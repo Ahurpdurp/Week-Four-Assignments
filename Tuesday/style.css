@@ -1,0 +1,60 @@
+.task-bar{
+    display: flex;
+    justify-content: center;
+    padding-top:2em;
+    color:rgb(94, 94, 94);
+}
+
+.task-bar input{
+    margin-right:1%;
+}
+
+.task-bar div{
+    margin-right:3%;
+}
+
+.pending-tasks{
+    padding-top:2em;
+}
+
+
+.pending-tasks h1{
+    text-align: center;
+    color:rgb(70, 70, 70);
+}
+
+.completed-tasks{
+    padding-top:2em;
+}
+
+.completed-tasks h1{
+    text-align: center;
+    color:rgb(70, 70, 70);
+}
+
+.list{
+    list-style: none;
+    margin-top:1em;
+}
+
+
+.list li{
+    list-style:none;
+    display:flex;
+    margin-left:30%;
+    margin-right:30%;
+    background-color:rgb(116, 201, 226);
+    color:white;
+    margin-top:.5em;
+}
+
+
+.list li button{
+    background-color:rgb(116, 201, 226);
+    border-style:none;
+    color:white;
+    font-weight:100;
+    margin-left:auto;
+}
+
+

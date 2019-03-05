@@ -1,0 +1,29 @@
+<html>
+    <head>
+<link rel = "stylesheet" href = "style.css"></link>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#pendingTasks, #completedTasks" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  } );
+  </script>
+    </head>
+    <body style = "font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+        <div class = "task-bar">
+            <div>Enter Task</div><input type = "text" id = "inputText" placeholder = "Enter Task">
+            <input type = "submit" id = "btnAddTask" value = "Add Item">
+        </div>
+        <div class = "pending-tasks">
+            <h1>Pending Tasks</h1>
+            <ul class = "list connectedSortable" id = 'pendingTasks' onchange = 'changePending()'></ul>
+        </div>
+        <div class = "completed-tasks">
+            <h1>Completed Tasks</h1>
+            <ul class = "list connectedSortable" id = 'completedTasks'></ul>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
