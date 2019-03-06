@@ -3,7 +3,7 @@ var pendingTasks = document.getElementById("pendingTasks");
 var completedTasks = document.getElementById('completedTasks')
 var inputText = document.getElementById("inputText");
 
-btnAddTask.addEventListener("click",function() {
+btnAddTask.addEventListener("click",() => {
     var checkCompleted = document.createElement("input");
     checkCompleted.setAttribute('type','checkbox');
     var addedItem = document.createElement("LI");
@@ -19,7 +19,8 @@ btnAddTask.addEventListener("click",function() {
     inputText.value = "";
     removeButton.onclick = function(){
         var row = this.parentElement;
-        row.style.display = "none";
+        //row.style.display = "none";
+        row.remove();
     }
     checkCompleted.onclick = function(){
         if(checkCompleted.checked == true){

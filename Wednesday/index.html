@@ -1,0 +1,26 @@
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "styles.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+  </head>
+
+<body onload="filterMenu()" class = font>
+  <h1 class = "top-header">Menu</h1>
+  <p class = "top-desc"><i>Choose our finest appetizers, entrees and desserts from our interactive menu below.</i></p>
+  <div class = 'btn btn-lg select-menu'>
+    <select id = 'selectMenu'>
+    <option value = 'All' selected = "selected">View All Choices</option>
+    <option value = "Starters">Starters</option>
+    <option value = "Entrees">Entrees</option>
+    <option value = "Desserts">Desserts</option>
+  </select>
+  </div>
+  <h2 id = "menuTitle" class = menu-type-title></h2>
+  <ul id = 'foodMenu' class = menu-list></ul>
+
+</body>
+<script src="dishes.js"></script>
+<script src="app.js"></script>
+</html>
