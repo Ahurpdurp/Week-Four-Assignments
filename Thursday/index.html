@@ -1,0 +1,21 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+</head>
+
+<body onload = "getSourcesList(); getNewsList()" class = 'font body-stye'>
+<div class = 'header-style'>
+    <h1>Your Daily News</h1>
+    <p>Scroll below for your daily dosage of world news. Click on the links for more information, or filter by news source :)</p>
+<select id = 'selectMenu' class = 'btn-secondary'></select>
+<br>
+<input type = 'checkbox' checked id = 'checkBox'></input><label style = 'padding-left: .5em; padding-top:.5em'><p>Display only sources with news articles</p></label>
+ </div>
+<ul id = 'newsList' class = 'list'></ul>
+</body>
+<script src="news.js"></script>
+<script src="app.js"></script>
+<script src="sources.js"></script>
+</html>

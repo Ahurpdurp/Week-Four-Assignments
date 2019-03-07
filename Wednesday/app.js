@@ -3,7 +3,7 @@ let selectMenu = document.getElementById('selectMenu');
 let menuTitle = document.getElementById('menuTitle');
 
 function displayMenuItems(list){
-    newList = list.map(post => {
+    let newList = list.map(post => {
     return`<li>
     <div><img src = "${post.imageURL}"></div>
     <div>

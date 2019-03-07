@@ -1,0 +1,40 @@
+.image img{
+    width:50%;
+}
+
+.header-style{
+    font-size:2em;
+    padding-bottom:4em;
+}
+
+.header-style p {
+    font-size:.5em;
+    font-style:italic;
+    padding-bottom:2em;
+}
+
+.list li{
+    list-style-type: none;
+    align-items: center;
+    width:70%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+
+.list div{
+    padding-top: 3em;
+    margin-left:25%;
+}
+
+.list span {
+    margin-left:25%;
+}
+.font {
+    font-family: 'Lato',sans-serif;
+    background-color:rgb(240, 240, 240);
+}
+
+.header-style{
+    text-align: center;
+}
